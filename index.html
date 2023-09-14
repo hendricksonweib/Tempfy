@@ -7,7 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div id="conteiner">
+            <img src="Logo (1) (1).svg" alt="logo tempfy">
+        <div id="conversor">
+            <h1>Convertter temperatura</h1>
+        <div class="selector">
+            <label for="selector-type" ></label>
+            <select id="selector-type">
+                <option value="nulo">Selecione a temperatura</option>
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheint">Fahrenheint</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+            <input type="number" id="input" placeholder="Digite a temperatura">
+            <button id="btn">Converter</button>
+        </div>
+        <div id="resultado">
+            <h1>Resultado</h1>
+            <div class="resposta">
+                <h2>Graus celsius</h2>
+                <p>32</p>
+            </div>
+            <div class="resposta">
+                <h2>Kelvin</h2>
+                <p>32</p>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="scripts.js"></script>
 </html>
