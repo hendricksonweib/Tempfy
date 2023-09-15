@@ -24,22 +24,22 @@ btn.addEventListener('click', function(){
 })
 function converterParaCelsius() {
    grau1.innerHTML = 'Fahrenheit'
-   respostaInt1.innerHTML = `${(input.value* 9/5)+ 32}°F`
+   respostaInt1.innerHTML = `${parseInt(input.value* 9/5)+ 32}°F`
    grau2.innerHTML = 'Kelvin'
-   respostaInt2.innerHTML = `${input.value + 273.15}°K`
+   respostaInt2.innerHTML = `${parseInt(input.value + 273.15)}°K`
     expandir.style.display = "block"
   }
   function converterParaFahrenheit() {
     grau1.innerHTML = 'Celsius'
-    respostaInt1.innerHTML = `${(input.value-32)*5/9}°C`
+    respostaInt1.innerHTML = `${parseInt((input.value-32)*5/9)}°C`
     grau2.innerHTML = 'Kelvin'
-    respostaInt2.innerHTML = `${input.value + 273.15}°K`
+    respostaInt2.innerHTML = `${parseInt(input.value + 273.15)}°K`
     expandir.style.display = "block"
   }
   function converterParaKelvin() {
     grau1.innerHTML = 'Celsius'
-    respostaInt1.innerHTML = `${(input.value-32)*5/9}°C`
+    respostaInt1.innerHTML = `${parseInt(input.value-32)*5/9}°C`
     grau2.innerHTML = 'Fahrenheit'
-    respostaInt2.innerHTML = `${(input.value* 9/5)+ 32}°F`
+    respostaInt2.innerHTML = `${parseInt(input.value* 9/5)+ 32}°F`
     expandir.style.display = "block"
   }
