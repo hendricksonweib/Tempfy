@@ -36,11 +36,23 @@ function converterParaCelsius() {
     respostaInt2.innerHTML = `${parseInt((input.value - 32) * 5 / 9 + 273.15)}°K`
     expandir.style.display = "block"
   }
+  // function converterParaKelvin() {
+  //   grau1.innerHTML = 'Celsius'
+  //   respostaInt1.innerHTML = `${parseFloat(input.value) - 273.15}°C`
+  //   grau2.innerHTML = 'Fahrenheit'
+  //   respostaInt2.innerHTML = `${(parseFloat(input.value) - 273.15)* 9 / 5 + 32}°F`
+  //   expandir.style.display = "block"
+  // }
+
   function converterParaKelvin() {
-    grau1.innerHTML = 'Celsius'
-    respostaInt1.innerHTML = `${parseInt(input.value + 273.15)}°C`
-    grau2.innerHTML = 'Fahrenheit'
-    respostaInt2.innerHTML = `${parseInt(input.value) * 9 / 5 + 32}°F`
-    expandir.style.display = "block"
-  }
+    grau1.innerHTML = 'Celsius';
+    var celsius = parseFloat(input.value) - 273.15;
+    respostaInt1.innerHTML = `${celsius.toFixed(2)}°C`; // Limita a 1 casa decimal
+    grau2.innerHTML = 'Fahrenheit';
+    var fahrenheit = (parseFloat(input.value) - 273.15)* 9 / 5 + 32;
+    respostaInt2.innerHTML = `${fahrenheit.toFixed(2)}°F`; // Limita a 1 casa decimal
+    expandir.style.display = "block";
+}
+
+
 
